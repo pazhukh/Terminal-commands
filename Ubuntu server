@@ -1,2 +1,5 @@
 //connect to server
 ssh remote_username@remote_host
+
+//run .jar class
+java -cp myJar.jar myClass
