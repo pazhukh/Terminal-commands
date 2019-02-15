@@ -12,6 +12,7 @@ crontab -e
 esc -> :w -> :q
 
 //crontab mac
+https://stackoverflow.com/questions/15395479/why-ive-got-no-crontab-entry-on-os-x-when-using-vim
 In Terminal: crontab -e.
 Press i to go into vim's insert mode.
 Type your cron job, for example:
