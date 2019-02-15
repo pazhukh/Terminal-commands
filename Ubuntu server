@@ -10,3 +10,14 @@ crontab -l
 crontab -e
 * * * * * /path/to/file.sh
 esc -> :w -> :q
+
+//crontab mac
+In Terminal: crontab -e.
+Press i to go into vim's insert mode.
+Type your cron job, for example:
+
+30 * * * * /usr/bin/curl --silent --compressed http://example.com/crawlink.php
+Press Esc to exit vim's insert mode.
+
+Type ZZ to exit vim (must be capital letters).
+You should see the following message: crontab: installing new crontab. You can verify the crontab file by using crontab -l.
