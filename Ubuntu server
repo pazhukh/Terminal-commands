@@ -9,18 +9,15 @@ java -cp myJar.jar myClass
 crontab -l  //перегляд
 crontab -e //редагування
 crontab- r  //видалення
-MAILTO="email@mail.com"
-* * * * * /path/to/file.sh
+MAILTO="pazhukh@gmail.com"
+* * * * * java -cp /home/salesforce/FinanceHistoryApp/financialHistoryApp.jar Main && echo "Schedule crontab was run in `date`" >> /home/salesforce/FinanceHistoryApp/logs.txt
 esc -> :w -> :q
 
 //crontab mac
 https://stackoverflow.com/questions/15395479/why-ive-got-no-crontab-entry-on-os-x-when-using-vim
-In Terminal: crontab -e.
-Press i to go into vim's insert mode.
-Type your cron job, for example:
-
-30 * * * * /usr/bin/curl --silent --compressed http://example.com/crawlink.php
-Press Esc to exit vim's insert mode.
-
-Type ZZ to exit vim (must be capital letters).
+1) In Terminal: crontab -e.
+2) Press i to go into vim's insert mode.
+3) Type your cron job, for example:
+4) Press Esc to exit vim's insert mode.
+5) Type ZZ to exit vim (must be capital letters).
 You should see the following message: crontab: installing new crontab. You can verify the crontab file by using crontab -l.
