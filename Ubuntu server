@@ -6,8 +6,9 @@ java -cp myJar.jar myClass
 
 
 //crontab
-crontab -l
-crontab -e
+crontab -l  //перегляд
+crontab -e //редагування
+crontab- r  //видалення
 MAILTO="email@mail.com"
 * * * * * /path/to/file.sh
 esc -> :w -> :q
