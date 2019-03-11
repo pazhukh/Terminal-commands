@@ -21,3 +21,7 @@ https://stackoverflow.com/questions/15395479/why-ive-got-no-crontab-entry-on-os-
 4) Press Esc to exit vim's insert mode.
 5) Type ZZ to exit vim (must be capital letters).
 You should see the following message: crontab: installing new crontab. You can verify the crontab file by using crontab -l.
+
+
+0 13 * * * java -cp /home/salesforce/SyncApp/SalesforceRecordsSyncWS.jar Main
+0 13 31 12 * java -cp /home/salesforce/FinanceHistoryApp/financialHistoryApp.jar Main
