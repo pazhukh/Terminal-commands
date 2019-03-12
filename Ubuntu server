@@ -22,6 +22,10 @@ https://stackoverflow.com/questions/15395479/why-ive-got-no-crontab-entry-on-os-
 5) Type ZZ to exit vim (must be capital letters).
 You should see the following message: crontab: installing new crontab. You can verify the crontab file by using crontab -l.
 
+//crontab in diff timezone
+https://stackoverflow.com/questions/13289751/cron-job-in-a-different-timezone
+5 2 3 * * TZ="America/New_York" /do/command > /dev/null 2>&1
+
 
 0 13 * * * java -cp /home/salesforce/SyncApp/SalesforceRecordsSyncWS.jar Main
 0 13 31 12 * java -cp /home/salesforce/FinanceHistoryApp/financialHistoryApp.jar Main
