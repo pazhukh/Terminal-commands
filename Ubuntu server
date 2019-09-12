@@ -27,5 +27,6 @@ https://stackoverflow.com/questions/13289751/cron-job-in-a-different-timezone
 5 2 3 * * TZ="America/New_York" /do/command > /dev/null 2>&1
 
 
-0 13 * * * java -cp /home/salesforce/SyncApp/SalesforceRecordsSyncWS.jar Main
-0 13 31 12 * java -cp /home/salesforce/FinanceHistoryApp/financialHistoryApp.jar Main
+0 13 * * * java -cp /home/salesforce/SyncApp/SalesforceRecordsSyncWS.jar Main 
+0 13 31 12 * java -cp /home/salesforce/FinanceHistoryApp/financialHistoryApp.jar Main && echo "Schedule crontab was run in `date`" >> /home/salesforce/FinanceHistoryApp/logs.txt
+0 6 * * * java -cp /home/salesforce/SyncApp/SalesforceRecordsSyncWS.jar Main && echo "Schedule crontab was run in `date`" >> /home/salesforce/SyncApp/logs.txt
