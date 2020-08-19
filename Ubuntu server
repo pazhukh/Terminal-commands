@@ -1,3 +1,8 @@
+MACOS
+//zip files => navigate to folder
+zip -r dir.zip . -x ".*" -x "__MACOSX"
+
+
 //connect to server
 ssh remote_username@remote_host
 
