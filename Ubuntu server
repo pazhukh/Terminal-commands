@@ -35,3 +35,12 @@ https://stackoverflow.com/questions/13289751/cron-job-in-a-different-timezone
 0 13 * * * java -cp /home/salesforce/SyncApp/SalesforceRecordsSyncWS.jar Main 
 0 13 31 12 * java -cp /home/salesforce/FinanceHistoryApp/financialHistoryApp.jar Main && echo "Schedule crontab was run in `date`" >> /home/salesforce/FinanceHistoryApp/logs.txt
 0 6 * * * java -cp /home/salesforce/SyncApp/SalesforceRecordsSyncWS.jar Main && echo "Schedule crontab was run in `date`" >> /home/salesforce/SyncApp/logs.txt
+
+
+//set up ANT
+export ANT_HOME=/Users/yaroslavpazhukh/Salesforce/apache-ant-1.10.8
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
+export PATH=${PATH}:${ANT_HOME}/bin
+
+//run this command to get JAVA_HOME path in Mac
+/usr/libexec/java_home -v 1.8.0_181
